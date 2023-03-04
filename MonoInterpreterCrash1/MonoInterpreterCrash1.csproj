@@ -6,5 +6,6 @@
         <ImplicitUsings>true</ImplicitUsings>
         <SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
         <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
+        <UseInterpreter>true</UseInterpreter>
     </PropertyGroup>
 </Project>
