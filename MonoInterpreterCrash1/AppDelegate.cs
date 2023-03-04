@@ -1,3 +1,6 @@
+using System.Runtime.InteropServices;
+using ObjCRuntime;
+
 namespace MonoInterpreterCrash1;
 
 [Register ("AppDelegate")]
@@ -9,6 +12,8 @@ public class AppDelegate : UIApplicationDelegate {
 
 	public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
 	{
+		method();
+
 		// create a new window instance based on the screen size
 		Window = new UIWindow (UIScreen.MainScreen.Bounds);
 
@@ -17,7 +22,7 @@ public class AppDelegate : UIApplicationDelegate {
 		vc.View!.AddSubview (new UILabel (Window!.Frame) {
 			BackgroundColor = UIColor.SystemBackground,
 			TextAlignment = UITextAlignment.Center,
-			Text = "Hello, iOS!",
+			Text = "Called P/Invoke method successfully!",
 			AutoresizingMask = UIViewAutoresizing.All,
 		});
 		Window.RootViewController = vc;
@@ -26,5 +31,24 @@ public class AppDelegate : UIApplicationDelegate {
 		Window.MakeKeyAndVisible ();
 
 		return true;
+	}
+
+	[DllImport(Constants.ObjectiveCLibrary, EntryPoint = "objc_msgSend")]
+	private static extern void method(
+		IntPtr a = default,
+		IntPtr b = default,
+		IntPtr c = default,
+		IntPtr d = default,
+		IntPtr e = default,
+		IntPtr f = default,
+		IntPtr g = default,
+		IntPtr h = default,
+		StructMoreThan16Bytes i = default);
+
+	private struct StructMoreThan16Bytes
+	{
+		private readonly long _;
+		private readonly long __;
+		private readonly byte ___;
 	}
 }
