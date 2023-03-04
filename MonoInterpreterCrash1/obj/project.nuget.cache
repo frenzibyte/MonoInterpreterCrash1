@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Irhdean6jWYyNTf/1t1mFbiAUPrZC8oZ+49oh6eKv8Gz24GyM4xrGGUm/Z+j5jopVU3dJmCnxUziO/P5u+gIig==",
+  "success": true,
+  "projectFilePath": "/Users/salman/Projects/MonoInterpreterCrash1/MonoInterpreterCrash1/MonoInterpreterCrash1.csproj",
+  "expectedPackageFiles": [
+    "/Users/salman/.nuget/packages/system.runtime.interopservices.nfloat.internal/6.0.1/system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

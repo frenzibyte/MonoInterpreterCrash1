@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/salman/Projects/MonoInterpreterCrash1/MonoInterpreterCrash1/MonoInterpreterCrash1.csproj": {}
+  },
+  "projects": {
+    "/Users/salman/Projects/MonoInterpreterCrash1/MonoInterpreterCrash1/MonoInterpreterCrash1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/salman/Projects/MonoInterpreterCrash1/MonoInterpreterCrash1/MonoInterpreterCrash1.csproj",
+        "projectName": "MonoInterpreterCrash1",
+        "projectPath": "/Users/salman/Projects/MonoInterpreterCrash1/MonoInterpreterCrash1/MonoInterpreterCrash1.csproj",
+        "packagesPath": "/Users/salman/.nuget/packages/",
+        "outputPath": "/Users/salman/Projects/MonoInterpreterCrash1/MonoInterpreterCrash1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/salman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-ios"
+        ],
+        "sources": {
+          "/Users/salman/.nuget/local": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-ios16.1": {
+            "targetAlias": "net6.0-ios",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-ios16.1": {
+          "targetAlias": "net6.0-ios",
+          "dependencies": {
+            "System.Runtime.InteropServices.NFloat.Internal": {
+              "target": "Package",
+              "version": "[6.0.1, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.iOS": {
+              "privateAssets": "all"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.406/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "iossimulator-x64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
